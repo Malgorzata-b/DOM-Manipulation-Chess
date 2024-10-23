@@ -42,7 +42,7 @@ for (let figure of figures) {
   const container = document.createElement("div");
   container.classList.add("container-figures");
   const image = document.createElement("img");
-  image.src = `./images/${figure.picture}`;
+  image.src = `/images/${figure.picture}`;
   image.style.width = "40px";
   image.style.height = "40px";
   image.style.borderRadius = "10px";
