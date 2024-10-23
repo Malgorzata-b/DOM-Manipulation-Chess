@@ -38,9 +38,12 @@ const figures = [
 ];
 
 const descriptionCon = document.querySelector("#description");
+//Loop to create a div with elements
 for (let figure of figures) {
+  //Create div
   const container = document.createElement("div");
   container.classList.add("container-figures");
+  //Create image
   const image = document.createElement("img");
   image.src = `/images/${figure.picture}`;
   image.style.width = "40px";
@@ -49,13 +52,15 @@ for (let figure of figures) {
   image.style.boxShadow = "0 5px 10px black";
   image.style.margin = "20px 0";
   image.classList.add("card-image");
+  //Create title
   const title = document.createElement("h3");
   title.textContent = figure.name;
   title.classList.add("title");
+  //Create description
   const descriptionContainer = document.createElement("p");
   descriptionContainer.textContent = figure.description;
   descriptionContainer.classList.add("description");
-
+  // Append - add elemnts to container
   container.append(title, image, descriptionContainer);
   descriptionCon.append(container);
 }
