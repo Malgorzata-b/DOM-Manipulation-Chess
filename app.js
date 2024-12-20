@@ -80,18 +80,16 @@ function ChessBoard() {
   pieces.forEach((pieces, i) => {
     const field = document.createElement("div");
     field.classList.add("field");
-    // Inserting the HTML for the chess piece into the square (or empty if no piece)
+
     field.innerHTML = pieces;
-    // Setting an attribute 'square-id' to identify each square (0-63)
-    field.setAttribute("square-id", i);
-    // Calculating the row number on the chessboard (from 0 to 7)
+    // Setting an attribute
+    field.setAttribute("field-id", i);
+
     const row = Math.floor((0 + i) / 8);
-    // Alternating square colors - if the row number is odd
+
     if (row % 2 === 1) {
-      // Check if the square index is odd or even and set the appropriate color
       field.classList.add(i % 2 === 1 ? "white" : "black");
     } else {
-      // If the row number is even, set the colors in reverse
       field.classList.add(i % 2 === 1 ? "black" : "white");
     }
 

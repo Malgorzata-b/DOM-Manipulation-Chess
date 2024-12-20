@@ -8,7 +8,7 @@
   --background-white: #f4e5d4;
   --background-black: rgb(186, 134, 70);
   --background-body: rgba(244, 125, 7, 0.712);
-  --shadow: rgba(80, 69, 49, 0.5);
+  --shadow: rgba(38, 34, 27, 0.5);
   --white-pieces: rgb(208, 209, 180);
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .chess-icon:hover {
-  box-shadow: 0 5px 10px var(--shadow);
+  box-shadow: 0 10px 20px var(--shadow);
 }
 
 .field {

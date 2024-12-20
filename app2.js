@@ -45,7 +45,7 @@ for (let figure of figures) {
   container.classList.add("container-figures");
   //Create image
   const image = document.createElement("img");
-  image.src = `/images/${figure.picture}`;
+  image.src = `./images/${figure.picture}`;
   image.style.width = "40px";
   image.style.height = "40px";
   image.style.borderRadius = "10px";
