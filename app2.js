@@ -46,8 +46,8 @@ for (let figure of figures) {
   //Create image
   const image = document.createElement("img");
   image.src = `./Images/${figure.picture}`;
-  image.style.width = "40px";
-  image.style.height = "40px";
+  image.style.width = "45px";
+  image.style.height = "45px";
   image.style.borderRadius = "10px";
   image.style.boxShadow = "0 5px 10px black";
   image.style.margin = "20px 0";
@@ -59,7 +59,7 @@ for (let figure of figures) {
   //Create description
   const descriptionContainer = document.createElement("p");
   descriptionContainer.textContent = figure.description;
-  descriptionContainer.classList.add("description");
+  descriptionContainer.classList.add("descriptionText");
   // Append - add elemnts to container
   container.append(title, image, descriptionContainer);
   descriptionCon.append(container);
