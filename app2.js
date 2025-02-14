@@ -48,7 +48,6 @@ for (let figure of figures) {
   image.src = `./Images/${figure.picture}`;
   image.style.width = "45px";
   image.style.height = "45px";
-  image.style.borderRadius = "10px";
   image.style.boxShadow = "0 5px 10px black";
   image.style.margin = "20px 0";
   image.classList.add("card-image");
